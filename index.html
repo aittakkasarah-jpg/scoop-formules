@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trois formules pour Scoop</title>
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aittakkasarah-jpg.github.io/scoop-formules/">
+<meta property="og:title" content="Trois formules pour Scoop">
+<meta property="og:description" content="Une proposition de Sarah Ait.">
+<meta property="og:image" content="https://aittakkasarah-jpg.github.io/scoop-formules/img/miniature.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://aittakkasarah-jpg.github.io/scoop-formules/img/miniature.png">
+<link rel="icon" type="image/png" href="img/icone.png">
+<link rel="apple-touch-icon" href="img/icone.png">
+<meta name="description" content="Trois formules de gestion des réseaux sociaux proposées à Scoop par Sarah Ait.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Charte Scoop (une seule ambiance, choisie) : bandeaux pleine largeur brun / crème / brun / crème.
+   Titres Fredoka, texte Jost. La formule du milieu est mise en avant en abricot. */
+:root {
+  --brun: #752F23;
+  --creme: #F9EDCE;
+  --creme-fonce: #F1DDAE;
+  --papier: #FFF8E6;
+  --abricot: #F8C37E;
+  --orange: #ED7F10;
+  --brun-doux: #7E4A3F;
+  --display: 'Fredoka', 'Trebuchet MS', sans-serif;
+  --body: 'Jost', 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--creme); color: var(--brun); font-family: var(--body); font-size: 18px; line-height: 1.5; }
+img { max-width: 100%; display: block; }
+h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; line-height: 1.08; }
+p, ul { margin: 0; }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1160px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 700px) { .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); } }
+.band { padding-block: 64px; }
+.band.brun { background: var(--brun); color: var(--creme); }
+.num { font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; font-family: var(--body); font-weight: 600; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; padding: 8px 18px; border-radius: 999px; background: var(--abricot); color: var(--brun); transform: rotate(-3deg); }
+.band.brun .tag { background: var(--orange); color: var(--brun); }
+.head { display: grid; gap: 14px; margin-bottom: 36px; max-width: 760px; }
+.head .tag { justify-self: start; }
+.head h2 { font-size: clamp(34px, 5vw, 56px); font-weight: 700; }
+.head p { font-size: 20px; }
+.band.brun .head p { color: var(--abricot); }
+
+/* Ouverture */
+.hero { background: var(--brun); color: var(--creme); padding-block: 36px 72px; overflow: hidden; }
+.hero .top { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.hero .logo { width: 160px; }
+.hero .by { font-size: 16px; color: var(--abricot); }
+.hero-body { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; margin-top: 40px; }
+.hero-text { min-width: 0; }
+.hero h1 { font-size: clamp(46px, 7.6vw, 96px); font-weight: 700; margin-top: 20px; }
+.hero h1 span { color: var(--abricot); }
+.hero .lead { font-size: clamp(20px, 2.2vw, 24px); margin-top: 22px; max-width: 580px; }
+.scoopy { position: relative; display: grid; place-items: center; }
+.scoopy::before { content: ""; position: absolute; width: 90%; aspect-ratio: 1; border-radius: 50%; background: var(--orange); }
+.scoopy img { position: relative; width: 96%; transform: rotate(-6deg); }
+@media (prefers-reduced-motion: no-preference) {
+  .scoopy img { animation: trot 3.2s ease-in-out infinite; }
+  @keyframes trot { 0%, 100% { transform: rotate(-6deg) translateY(0); } 50% { transform: rotate(-3deg) translateY(-10px); } }
+}
+
+/* Ce qu'on a construit */
+.proofs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.proof { background: var(--papier); border: 2px solid var(--creme-fonce); border-radius: 26px; padding: 26px 24px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.proof .v { font-family: var(--display); font-weight: 700; font-size: clamp(38px, 4.4vw, 52px); line-height: 1; color: var(--brun); }
+.proof .l { font-weight: 600; font-size: 19px; }
+.proof .d { font-size: 17px; color: var(--brun-doux); }
+.proof:nth-child(2) .v { color: var(--orange); }
+
+/* Formules */
+.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+.plan { position: relative; background: var(--creme); color: var(--brun); border-radius: 30px; padding: 32px 26px 28px; display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.plan.star { background: var(--abricot); }
+.plan .flag { position: absolute; top: -16px; right: 22px; background: var(--brun); color: var(--creme); border: 2px solid var(--abricot); font-weight: 600; font-size: 14px; letter-spacing: 2px; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; transform: rotate(4deg); }
+.plan h3 { font-size: clamp(32px, 3.4vw, 40px); font-weight: 700; }
+.plan .pitch { font-size: 18px; margin-top: 8px; }
+.price { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding-block: 16px; border-top: 2px solid rgba(117, 47, 35, 0.18); border-bottom: 2px solid rgba(117, 47, 35, 0.18); }
+.price .amount { font-family: var(--display); font-weight: 700; font-size: clamp(46px, 5vw, 60px); line-height: 1; }
+.price .unit { font-weight: 600; font-size: 17px; line-height: 1.3; }
+.plan ul { list-style: none; padding: 0; display: grid; gap: 14px; }
+.plan li { display: grid; grid-template-columns: 14px 1fr; gap: 10px; font-size: 17px; line-height: 1.45; }
+.plan li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--orange); margin-top: 8px; }
+.plan.star li::before { background: var(--brun); }
+.plan li b { font-weight: 600; }
+.plan .fit { margin-top: auto; font-size: 17px; font-weight: 500; background: var(--papier); border-radius: 18px; padding: 16px 18px; }
+.plan.star .fit { background: var(--creme); }
+
+/* Conditions */
+.terms { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px 40px; }
+.term { display: grid; gap: 4px; min-width: 0; }
+.term b { font-family: var(--display); font-weight: 600; font-size: 22px; }
+.term span { font-size: 18px; }
+
+/* Pied */
+.foot { background: var(--brun); color: var(--creme); padding-block: 40px; }
+.foot .wrap { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
+.foot p { font-size: 20px; }
+.foot .sig { font-family: var(--display); font-weight: 600; font-size: 26px; color: var(--abricot); }
+.foot a { font-weight: 600; font-size: 17px; background: var(--orange); color: var(--brun); text-decoration: none; padding: 10px 20px; border-radius: 999px; }
+.foot a:hover { background: var(--abricot); }
+
+@media (max-width: 960px) {
+  .plans { grid-template-columns: 1fr; max-width: 560px; gap: 30px; }
+  .proofs { grid-template-columns: 1fr; max-width: 560px; }
+}
+@media (max-width: 760px) {
+  .band { padding-block: 52px; }
+  .hero-body { grid-template-columns: 1fr; margin-top: 28px; }
+  .scoopy { max-width: 300px; justify-self: center; }
+  .terms { grid-template-columns: 1fr; }
+  .head p { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <img class="logo" src="img/logo.png" alt="Scoop sweet">
+      <p class="by">Une proposition de Sarah Ait</p>
+    </div>
+    <div class="hero-body">
+      <div class="hero-text">
+        <span class="tag">Choose it · Mix it · Scoop it</span>
+        <h1>Trois formules pour <span>Scoop</span></h1>
+        <p class="lead">Tu choisis le rythme. Je m'occupe de tout : la stratégie, le tournage, le montage et la publication.</p>
+      </div>
+      <div class="scoopy" aria-hidden="true"><img src="img/scoopy.png" alt=""></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="band" aria-labelledby="t-ensemble">
+    <div class="wrap">
+      <div class="head">
+        <span class="tag">Depuis le début</span>
+        <h2 id="t-ensemble">Ce qu'on a déjà construit ensemble</h2>
+      </div>
+      <div class="proofs">
+        <div class="proof">
+          <span class="v">Sold out</span>
+          <span class="l">Le lendemain de notre collaboration</span>
+          <p class="d">Après la sortie du chocolat de Dubai.</p>
+        </div>
+        <div class="proof">
+          <span class="v num">64&nbsp;500</span>
+          <span class="l">vues pour notre collaboration</span>
+          <p class="d">La vidéo publiée sur mon compte, partagée 2&nbsp;408 fois.</p>
+        </div>
+        <div class="proof">
+          <span class="v num">142&nbsp;102</span>
+          <span class="l">personnes touchées en octobre</span>
+          <p class="d">5 fois plus que les 30 jours d'avant, avec l'aide de 3 reels sponsorisés.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band brun" aria-labelledby="t-formules">
+    <div class="wrap">
+      <div class="head">
+        <span class="tag">Les formules</span>
+        <h2 id="t-formules">Choisis ton rythme</h2>
+      </div>
+      <div class="plans">
+
+        <article class="plan">
+          <div>
+            <h3>Essentielle</h3>
+            <p class="pitch">Pour rester visible et proche de ta communauté.</p>
+          </div>
+          <div class="price"><span class="amount num">3&nbsp;000</span><span class="unit">MAD HT<br>par mois</span></div>
+          <ul>
+            <li><span><b>Stratégie de contenu mensuelle</b>, alignée sur tes objectifs et ton positionnement</span></li>
+            <li><span><b>1 tournage par mois</b>, pour produire des contenus vidéo de qualité et valoriser ton univers</span></li>
+            <li><span><b>1 publication par semaine</b>, pensée pour renforcer ton image, ton offre ou ta notoriété</span></li>
+            <li><span><b>3 séquences de stories par semaine</b>, programmées sur les jours les plus stratégiques pour ton audience, notamment vendredi, samedi et dimanche</span></li>
+            <li><span><b>Rapport statistique mensuel</b>, avec analyse des performances et recommandations</span></li>
+          </ul>
+          <p class="fit">Idéal si tu veux une présence régulière, soignée et cohérente, sans surcharger ton budget.</p>
+        </article>
+
+        <article class="plan star">
+          <span class="flag">Recommandée</span>
+          <div>
+            <h3>Croissance</h3>
+            <p class="pitch">Ta présence sur les réseaux, entièrement gérée. Tu valides, je m'occupe du reste.</p>
+          </div>
+          <div class="price"><span class="amount num">6&nbsp;000</span><span class="unit">MAD HT<br>par mois</span></div>
+          <ul>
+            <li><span><b>Stratégie marketing mensuelle</b> : positionnement, sujets, messages et planning éditorial</span></li>
+            <li><span><b>1 tournage par mois chez Scoop</b> : déplacement, idée, gestion du tournage inclus</span></li>
+            <li><span><b>12 contenus créés et montés (3 par semaine)</b> : idée, textes et montage, en Reels ou carrousels selon la stratégie</span></li>
+            <li><span><b>Publication sur tous tes réseaux</b>, chaque contenu adapté aux plateformes utiles à Scoop</span></li>
+            <li><span><b>12 séquences de stories de conversion (3 par semaine)</b>, pour transformer tes abonnés en commandes et en visites</span></li>
+            <li><span><b>Optimisation continue</b> : j'analyse les résultats et j'améliore ta bio, ton feed, tes stories à la une et la stratégie</span></li>
+            <li><span><b>Plateforme client privée</b> : tu vois le planning et tu valides tout en deux clics</span></li>
+            <li><span><b>Suivi des commentaires</b> : je modère et je redirige les demandes vers ton WhatsApp ou ton équipe</span></li>
+          </ul>
+          <p class="fit">Idéal si tu veux tout déléguer et ne passer que 15 minutes par semaine à valider.</p>
+        </article>
+
+        <article class="plan">
+          <div>
+            <h3>Accélération</h3>
+            <p class="pitch">Pour accélérer ta visibilité, produire plus de contenu et développer ta communauté.</p>
+          </div>
+          <div class="price"><span class="amount num">7&nbsp;500</span><span class="unit">MAD HT<br>par mois</span></div>
+          <ul>
+            <li><span><b>Rapport statistique et stratégie 2 fois par mois</b>, pour suivre les résultats, ajuster les contenus et optimiser la performance en continu</span></li>
+            <li><span><b>2 tournages par mois</b>, afin d'avoir un stock de vidéos professionnelles pour tes Reels, TikToks et publications</span></li>
+            <li><span><b>4 publications par semaine</b>, pour alimenter tes réseaux avec un contenu régulier, varié et orienté résultats</span></li>
+            <li><span><b>Stories quotidiennes</b>, pour garder le lien chaque jour, créer de la proximité et relayer tes actualités en temps réel</span></li>
+            <li><span><b>Tout le suivi de Croissance</b> : optimisation continue, plateforme client privée et suivi des commentaires</span></li>
+          </ul>
+          <p class="fit">Idéal si tu veux une communication plus dynamique, une production vidéo régulière et un pilotage plus réactif.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="t-conditions">
+    <div class="wrap">
+      <div class="head">
+        <span class="tag">À savoir</span>
+        <h2 id="t-conditions">Les conditions</h2>
+      </div>
+      <div class="terms">
+        <div class="term"><b>Sans engagement</b><span>Si tu arrêtes, je continue jusqu'à la fin du mois payé.</span></div>
+        <div class="term"><b>Paiement</b><span>Au début de chaque mois.</span></div>
+        <div class="term"><b>Validation</b><span>Rien n'est publié sans ton accord.</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <p class="sig">Sarah Ait</p>
+      <p>Stratégie, tournage, montage et publication.</p>
+    </div>
+    <a href="https://sarah-cm.fans/" target="_blank" rel="noopener">Voir mon site</a>
+  </div>
+</footer>
+</body>
+</html>
